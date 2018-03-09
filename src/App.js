@@ -11,7 +11,7 @@ class App extends Component {
           <h1 className="App-title">Welcome to React</h1>
         </header>
         <p className="App-intro">
-          <i class="fa fa-info-circle" />Info
+          <i class="fa fa-info-circle" />Infos
         </p>
       </div>
     );

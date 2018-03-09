@@ -1,5 +1,5 @@
 #Things installed
 
 ##less
-##less-watcher
+##less-watch-compiler
 ##font-awesome
