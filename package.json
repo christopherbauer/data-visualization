@@ -3,8 +3,6 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "font-awesome": "^4.7.0",
-    "fs-extra": "^5.0.0",
     "less": "^3.0.1",
     "less-watch-compiler": "^1.11.0",
     "npm-run-all": "^4.1.2",
@@ -16,10 +14,16 @@
     "build-css": "lessc src/index.less src/index.css",
     "watch-css": "less-watch-compiler src src",
     "start-js": "react-scripts start",
-    "start": "npm-run-all -p build-css watch-css start-js",
+    "copy-fa-fonts": "gulp font-awesome-fonts",
+    "copy-fa-less": "gulp font-awesome-less",
+    "start": "npm-run-all -p copy-fa-less copy-fa-fonts build-css watch-css start-js",
     "build-js": "react-scripts build",
-    "build": "npm-run-all -p build-js prepare.js",
+    "build": "npm-run-all -p build-js",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "font-awesome": "^4.7.0",
+    "gulp": "^3.9.1"
   }
 }
