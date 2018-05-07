@@ -104,6 +104,18 @@ class App extends Component {
         Name: "Juventus",
         Color: "repeating-linear-gradient(90deg, white, white 10px, black 10px, black 20px)",
         Stadium: "Allianz Stadium"
+      },
+      {
+        id: 7,
+        Name: "Barcelona",
+        Color: "repeating-linear-gradient(90deg, #55F, #55f 20px, #862633 20px, #862633 40px)",
+        Stadium: "Camp Nou"
+      },
+      {
+        id: 8,
+        Name: "Manchester City",
+        Color: "skyblue",
+        Stadium: "City of Manchester Stadium"
       }
     ]
     var data = {
@@ -212,64 +224,41 @@ class App extends Component {
             },
             {
               //Barca v Roma
-              FirstTeam: "",
-              SecondTeam: "",
-              Aggregate: [],
+              FirstTeam: 3,
+              SecondTeam: 7,
+              Aggregate: [ 4, 4 ],
               FirstLeg: {
-                Home: "",
-                Away: "",
-                Date: "",
-                Score: []
+                Home: 7,
+                Away: 3,
+                Date: "2018-04-04",
+                Score: [ 4, 1]
               },
               SecondLeg: {
-                Home: "",
-                Away: "",
-                Date: "",
-                Score: []
+                Home: 3,
+                Away: 7,
+                Date: "2018-04-10",
+                Score: [ 3,0 ]
               }
             },
             {
-              FirstTeam: "",
-              SecondTeam: "",
-              Aggregate: [],
+              //Liverpool v Man City
+              FirstTeam: 1,
+              SecondTeam: 8,
+              Aggregate: [ 5, 1 ],
               FirstLeg: {
-                Home: "",
-                Away: "",
-                Date: "",
-                Score: []
+                Home: 1,
+                Away: 8,
+                Date: "2018-04-04",
+                Score: [ 3, 0 ]
               },
               SecondLeg: {
-                Home: "",
-                Away: "",
-                Date: "",
-                Score: []
+                Home: 8,
+                Away: 1,
+                Date: "2018-04-10",
+                Score: [ 1, 2 ]
               }
             }
           ]
-        },
-        { 
-          Level: 1,
-          Name: "Round of 16",
-          Matches: [
-            {
-              FirstTeam: "Liverpool",
-              SecondTeam: "Porto",
-              Aggregate: [5, 0],
-              FirstLeg: {
-                Home: "Porto",
-                Away: "Liverpool",
-                Score: [0, 5]
-              },
-              SecondLeg: {
-                Home: "Liverpool",
-                Away: "Porto",
-                Score: [0, 0]
-              }
-            }
-          ]
-        },
-        {
-
         }
       ]
     };
